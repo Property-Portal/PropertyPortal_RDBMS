@@ -1,0 +1,26 @@
+﻿property_id,property_type,address,city,state,zip_code,price,bedrooms,bathrooms,listing_date,agent_id,property_status,Sqr_Ft
+1,Apartment,10998 Davis Stream Apt. 458,Naperville,IL,32151,"490,000",2,3,9/20/23,2,sold,800
+2,Duplex,0258 Sanders Flats,Columbia,MD,52425,"670,000",2,3,9/28/23,10,sold,400
+3,Condo,70450 Kyle Stravenue Suite 572,Sugar Land,TX,84832,"620,000",3,1,6/20/22,15,not sold,560
+4,Apartment,4411 Higgins Glens,Clifton,NJ,66204,"900,000",1,3,3/23/23,11,sold,800
+5,Duplex,9062 Moore Place,Cary,NC,739,"220,000",1,2,8/21/21,9,sold,420
+6,Duplex,250 Caleb Turnpike,Overland Park,KS,91637,"470,000",3,2,9/25/23,2,sold,580
+7,Single Family,05320 Tina Plains,Round Rock,TX,40483,"900,000",1,1,7/26/21,13,sold,900
+8,Condo,759 Kimberly Avenue Suite 218,Fishers,IN,58823,"120,000",2,1,10/27/22,4,sold,670
+9,Townhouse,9745 Haley Walk,Overland Park,KS,40144,"820,000",3,1,5/31/23,4,sold,380
+10,Townhouse,188 Ortega Unions,Rochester Hills,MI,15500,"660,000",1,1,12/23/22,13,sold,470
+11,Duplex,131 Ross Squares,Beaverton,OR,37157,"900,000",2,3,11/14/23,7,sold,490
+12,Duplex,2208 Cindy Place,Beaverton,OR,67806,"720,000",1,2,3/25/23,14,sold,790
+13,Apartment,5482 Kimberly Wall Apt. 932,Sugar Land,TX,18170,"420,000",1,2,2/16/23,1,sold,500
+14,Duplex,64264 Williams Heights Apt. 723,Beaverton,OR,46281,"460,000",3,2,4/27/22,10,sold,700
+15,Apartment,0129 Bailey Plain,Carmel,IN,37583,"600,000",3,2,8/15/21,1,not sold,660
+16,Apartment,451 William Street,Columbia,MD,56454,"770,000",4,1,4/25/22,7,sold,670
+17,Single Family,922 Khan Loaf Suite 794,Fishers,IN,61479,"250,000",3,3,8/28/23,9,not sold,760
+18,Single Family,680 Vasquez Alley Apt. 505,Roswell,GA,69562,"130,000",5,3,9/30/21,15,not sold,280
+19,Single Family,39905 Kylie Fall Suite 565,Overland Park,KS,81662,"420,000",5,1,6/25/23,4,sold,540
+20,Condo,1248 Brad Highway Suite 315,Columbia,MD,64553,"690,000",1,1,9/3/21,9,not sold,560
+21,Apartment,1514 Matthew Views,Gilbert,AZ,74763,"350,000",5,1,8/25/22,12,sold,780
+22,Condo,987 Willis Expressway Apt. 480,Sugar Land,TX,70650,"670,000",2,3,9/20/21,7,sold,820
+23,Townhouse,667 Wright Grove,Sugar Land,TX,60096,"140,000",1,1,1/30/23,3,sold,370
+24,Condo,2998 Theodore Springs,Beaverton,OR,75663,"390,000",4,2,1/25/22,7,sold,500
+25,Townhouse,0846 Smith Pass,Fishers,IN,10056,"830,000",2,1,6/28/23,1,sold,960
