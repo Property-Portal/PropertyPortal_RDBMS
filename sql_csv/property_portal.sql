@@ -1,3 +1,12 @@
+CREATE TABLE `Agent` (
+  `agent_id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` CHAR(255) NOT NULL,
+  `last_name` CHAR(255) NOT NULL,
+  `email` CHAR(255) NOT NULL,
+  `phone` CHAR(255) NOT NULL,
+  PRIMARY KEY (`agent_id`)
+);
+
 CREATE TABLE `Property_Listing` (
   `property_id` INT NOT NULL AUTO_INCREMENT,
   `property_type` CHAR(255) NOT NULL,
@@ -13,15 +22,6 @@ CREATE TABLE `Property_Listing` (
   `property_status` CHAR(255) NOT NULL,
   PRIMARY KEY (`property_id`),
   FOREIGN KEY (`agent_id`) REFERENCES `Agent`(`agent_id`)
-);
-
-CREATE TABLE `Agent` (
-  `agent_id` INT NOT NULL AUTO_INCREMENT,
-  `first_name` CHAR(255) NOT NULL,
-  `last_name` CHAR(255) NOT NULL,
-  `email` CHAR(255) NOT NULL,
-  `phone` CHAR(255) NOT NULL,
-  PRIMARY KEY (`agent_id`)
 );
 
 CREATE TABLE `Buyers` (
@@ -48,7 +48,7 @@ CREATE TABLE `Transaction` (
   
 
 /* Change file paths for loading data from local machine */
-  LOAD DATA LOCAL INFILE 'sql_csv/Agents.csv'
+  LOAD DATA LOCAL INFILE 'C:/PropertyPortal/Agents.csv'
   INTO TABLE Agent
   FIELDS TERMINATED BY ','
   OPTIONALLY ENCLOSED BY '"'
@@ -56,7 +56,7 @@ CREATE TABLE `Transaction` (
   IGNORE 1 ROWS;
 
 /* Change file paths for loading data from local machine */
-  LOAD DATA LOCAL INFILE 'sql_csv/Buyers.csv'
+  LOAD DATA LOCAL INFILE 'C:/PropertyPortal/Buyers.csv'
   INTO TABLE Buyers
   FIELDS TERMINATED BY ','
   OPTIONALLY ENCLOSED BY '"'
@@ -64,7 +64,7 @@ CREATE TABLE `Transaction` (
   IGNORE 1 ROWS;
 
 /* Change file paths for loading data from local machine */
-  LOAD DATA LOCAL INFILE 'sql_csv/Property_Listing.csv'
+  LOAD DATA LOCAL INFILE 'C:/PropertyPortal/Property_Listing.csv'
   INTO TABLE Property_Listing
   FIELDS TERMINATED BY ','
   OPTIONALLY ENCLOSED BY '"'
@@ -73,11 +73,12 @@ CREATE TABLE `Transaction` (
   SET listing_date = STR_TO_DATE(listing_date, '%m/%d/%y');
 
 /* Change file paths for loading data from local machine */
-  LOAD DATA LOCAL INFILE 'sql_csv/Transactions.csv'
+  LOAD DATA LOCAL INFILE 'C:/PropertyPortal/Transactions.csv'
   INTO TABLE Transaction
   FIELDS TERMINATED BY ','
   OPTIONALLY ENCLOSED BY '"'
   LINES TERMINATED BY '\n'
   IGNORE 1 ROWS
-  SET listing_date = STR_TO_DATE(listing_date, '%m/%d/%y');
-  
+  (@var1, buyer_id, agent_id, property_id, @var2, sale_price)
+  SET
+  transaction_date = STR_TO_DATE(@var2, '%m/%d/%y');
