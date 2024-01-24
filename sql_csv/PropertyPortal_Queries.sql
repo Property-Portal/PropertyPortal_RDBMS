@@ -1,7 +1,6 @@
-Here is a list of different queries that a real estate agent supervisor may want to run. 
+/*Here is a list of different queries that a real estate agent supervisor may want to run. */
 
 /* Query to identify which agents with the most houses sold in a list from top to bottom. */
-
 
 SELECT 
     A.agent_id,
@@ -20,8 +19,7 @@ ORDER BY
     properties_sold DESC;
 
 
-
-/* Query to that lists all of the unsold properties from longest date on the market to most recent (in descending order): */
+/* Query to that lists all of the unsold properties from longest date on the market to most recently listed. */
 
 SELECT 
     property_id,
