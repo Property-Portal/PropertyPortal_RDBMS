@@ -1,4 +1,4 @@
-Here is a list of different queries that a real estate agent supervisor may want to run. 
+/* Here is a list of different queries that a real estate agent supervisor may want to run. */
 
 /* Query to identify which agents with the most houses sold in a list from top to bottom. */
 
